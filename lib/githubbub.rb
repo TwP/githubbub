@@ -43,7 +43,7 @@ class GitHubBub
     end
 
     if user.nil? or user.empty?
-      puts "You typed in #{orig.inspect} and I don't understand that"
+      puts "You typed in #{orig.inspect} and I don't understand that!"
       puts "Usage:"
       puts "  githubbub [github username]"
       abort
@@ -54,7 +54,10 @@ class GitHubBub
 
   def load_gemspec
     fn = Dir.glob('*.gemspec').first
-    return if fn.nil?
+    if fn.nil?
+      puts "I'm sorry, but I could not find a gemspec file!"
+      abort
+    end
 
     code = File.read(fn)
     self.gemspec = eval(code)
