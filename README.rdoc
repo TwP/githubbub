@@ -1,32 +1,43 @@
-githubbub
-    by FIXME (your name)
-    FIXME (url)
+GitHub-Bub
+    by Tim Pease
+    http://codeforpeople.rubyforge.org/githubbub
 
 == DESCRIPTION:
 
-FIXME (describe your package)
+What you're looking for is over on GitHub, bub!
 
-== FEATURES/PROBLEMS:
+This little gem will build an "auto-forwarder" gem that you can upload to
+RubyForge. The auto-forwarder, when installed, will automatically install your
+gem from the GitHub gem repository. Obviously this implies that you need a
+GitHub account and a project that is configured to automatically build gems.
 
-* FIXME (list of features or problems)
+GitHub-Bub relies on the presence of .gemspec file in the current directory.
+All the information about your gem is gleaned from this file. The only
+information you need to provide is your GitHub username.
+
+You still need to have a project and package on RubyForge for the gem
+publishing to work properly.
+
+Enjoy!
 
 == SYNOPSIS:
 
-  FIXME (code sample of usage)
+  githubbub [github username]
 
-== REQUIREMENTS:
+== REQUIREMENTS: 
 
-* FIXME (list of requirements)
+You need to have a GitHub account. You need a project gemspec file, and your
+project needs to be configured on GitHub to automatically build gems.
 
 == INSTALL:
 
-* FIXME (sudo gem install, anything else)
+* sudo gem install githubbub
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2008 FIXME (different license?)
+Copyright (c) 2009
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
