@@ -24,7 +24,7 @@ PROJ.rubyforge.name = 'codeforpeople'
 PROJ.exclude << 'githubbub.gemspec'
 PROJ.readme_file = 'README.rdoc'
 PROJ.ignore_file = '.gitignore'
-PROJ.rdoc.remote_dir = 'bones'
+PROJ.rdoc.remote_dir = 'githubbub'
 
 PROJ.spec.opts << '--color'
 
